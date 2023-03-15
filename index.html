@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>typing speed test app</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eee;
+        font-family: sans-serif;
+      }
+      h1 {
+        color: #42a5f5;
+        font-size: 40px;
+        text-align: center;
+        /* background-color: white; */
+        margin: 0 0 150px;
+        padding: 20px;
+        text-transform: capitalize;
+        box-shadow: 0px 8px 20px 0px #00000052;
+        border-radius: 6px;
+      }
+      input {
+        border: 3px #42a5f5 solid;
+        padding: 20px;
+        border-radius: 6px;
+        width: 500px;
+        color: #42a5f5;
+        display: block;
+        margin: auto auto 30px;
+        text-transform: capitalize;
+        transition: font-size 0.3s;
+      }
+      input:focus {
+        border: none;
+        outline: none;
+        font-size: 20px;
+      }
+      .words {
+        user-select: none;
+        width: 500px;
+        margin: 0 auto 20px;
+        height: 55px;
+        gap: 10px;
+        display: flex;
+        overflow: hidden;
+        visibility: hidden;
+        align-items: flex-end;
+      }
+      .words > span {
+        padding: 5px;
+        background-color: #42a5f5;
+        color: #eee;
+        font-size: 25px;
+        border-radius: 6px;
+        transition: 0.1s font-size linear, 0.1s color linear;
+      }
+      .words span:first-child {
+        padding: 10px;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: white;
+        user-select: none;
+        align-self: flex-end;
+      }
+      .counter {
+        font-size: 80px;
+        text-align: center;
+        margin-top: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>typing speed test app</h1>
+    <div class="words"></div>
+    <input type="text" placeholder="counter dwon begin with typing" />
+    <div class="counter">30</div>
+    <script src="main.js"></script>
+  </body>
+</html>
